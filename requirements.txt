@@ -1,0 +1,5 @@
+# Python 3.10+ required.
+# Run from the repository root (the directory containing pyproject.toml).
+# The NGBoost wrappers use the bundled UDBoost/ sources rather than a PyPI wheel.
+# JAX runs on CPU by default; no GPU extras are required.
+-e .[benchmarks,test]

@@ -1,0 +1,59 @@
+[
+  {
+    "diagnostics_json": "generated_dataset_n100_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 315.3732292583728,
+      "avg_post_std": 354.25745072378993,
+      "n_eval": 1500,
+      "n_obs": 100,
+      "pct_post_ge_80pct_prior": 0.06666666666666667,
+      "pct_post_lt_20pct_prior": 2.1333333333333333,
+      "snr": 1.1232958851861228,
+      "y_max": 12696.625392973694,
+      "y_min": -2829.467552662073,
+      "y_std": 1670.040295696127
+    },
+    "diagnostics_text": "generated_dataset_n100_diagnostics.txt",
+    "num_observations": 100,
+    "posterior_pdp_plot": "generated_dataset_n100_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n500_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 315.3732292583728,
+      "avg_post_std": 267.9649380849109,
+      "n_eval": 1500,
+      "n_obs": 500,
+      "pct_post_ge_80pct_prior": 0.0,
+      "pct_post_lt_20pct_prior": 11.533333333333333,
+      "snr": 0.8496756009222896,
+      "y_max": 12696.625392973694,
+      "y_min": -2939.7843929967544,
+      "y_std": 1377.7284019799836
+    },
+    "diagnostics_text": "generated_dataset_n500_diagnostics.txt",
+    "num_observations": 500,
+    "posterior_pdp_plot": "generated_dataset_n500_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n1000_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 315.3732292583728,
+      "avg_post_std": 222.41694234883033,
+      "n_eval": 1500,
+      "n_obs": 1000,
+      "pct_post_ge_80pct_prior": 0.0,
+      "pct_post_lt_20pct_prior": 26.066666666666666,
+      "snr": 0.7052499125301879,
+      "y_max": 14374.646749667256,
+      "y_min": -2939.7843929967544,
+      "y_std": 1373.4184688901894
+    },
+    "diagnostics_text": "generated_dataset_n1000_diagnostics.txt",
+    "num_observations": 1000,
+    "posterior_pdp_plot": "generated_dataset_n1000_posterior_pdp.png",
+    "status": "success"
+  }
+]

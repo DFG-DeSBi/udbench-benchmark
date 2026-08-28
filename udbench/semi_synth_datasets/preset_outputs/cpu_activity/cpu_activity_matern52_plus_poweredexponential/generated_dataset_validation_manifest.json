@@ -1,0 +1,59 @@
+[
+  {
+    "diagnostics_json": "generated_dataset_n100_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.5326361581504807,
+      "avg_post_std": 3.062195648119626,
+      "n_eval": 1500,
+      "n_obs": 100,
+      "pct_post_ge_80pct_prior": 1.2666666666666666,
+      "pct_post_lt_20pct_prior": 53.86666666666666,
+      "snr": 5.749132125676103,
+      "y_max": 103.49460667304227,
+      "y_min": 66.12789520527961,
+      "y_std": 8.859181783659155
+    },
+    "diagnostics_text": "generated_dataset_n100_diagnostics.txt",
+    "num_observations": 100,
+    "posterior_pdp_plot": "generated_dataset_n100_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n500_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.5326361581504807,
+      "avg_post_std": 1.8384762761303688,
+      "n_eval": 1500,
+      "n_obs": 500,
+      "pct_post_ge_80pct_prior": 0.26666666666666666,
+      "pct_post_lt_20pct_prior": 82.66666666666667,
+      "snr": 3.4516550331736235,
+      "y_max": 104.54332147419719,
+      "y_min": 64.34683097019867,
+      "y_std": 8.719691712490391
+    },
+    "diagnostics_text": "generated_dataset_n500_diagnostics.txt",
+    "num_observations": 500,
+    "posterior_pdp_plot": "generated_dataset_n500_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n1000_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.5326361581504807,
+      "avg_post_std": 1.114870911690767,
+      "n_eval": 1500,
+      "n_obs": 1000,
+      "pct_post_ge_80pct_prior": 0.06666666666666667,
+      "pct_post_lt_20pct_prior": 93.8,
+      "snr": 2.093119091955813,
+      "y_max": 104.54332147419719,
+      "y_min": 64.34683097019867,
+      "y_std": 8.690801005807856
+    },
+    "diagnostics_text": "generated_dataset_n1000_diagnostics.txt",
+    "num_observations": 1000,
+    "posterior_pdp_plot": "generated_dataset_n1000_posterior_pdp.png",
+    "status": "success"
+  }
+]

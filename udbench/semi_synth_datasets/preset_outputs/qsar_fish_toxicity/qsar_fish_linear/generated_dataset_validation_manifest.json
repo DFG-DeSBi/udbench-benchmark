@@ -1,0 +1,47 @@
+[
+  {
+    "diagnostics_json": "generated_dataset_n100_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.45649143447441376,
+      "avg_post_std": 0.8406284141886013,
+      "n_eval": 908,
+      "n_obs": 100,
+      "pct_post_ge_80pct_prior": 27.422907488986787,
+      "pct_post_lt_20pct_prior": 0.0,
+      "snr": 1.8414987680031012,
+      "y_max": 7.315306082019097,
+      "y_min": 1.069716838695381,
+      "y_std": 1.326254509386701
+    },
+    "diagnostics_text": "generated_dataset_n100_diagnostics.txt",
+    "num_observations": 100,
+    "posterior_pdp_plot": "generated_dataset_n100_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n500_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.45649143447441376,
+      "avg_post_std": 0.49565546233902397,
+      "n_eval": 908,
+      "n_obs": 500,
+      "pct_post_ge_80pct_prior": 0.4405286343612335,
+      "pct_post_lt_20pct_prior": 15.198237885462554,
+      "snr": 1.0857935656770912,
+      "y_max": 8.537860909292188,
+      "y_min": 1.069716838695381,
+      "y_std": 1.2612141324926973
+    },
+    "diagnostics_text": "generated_dataset_n500_diagnostics.txt",
+    "num_observations": 500,
+    "posterior_pdp_plot": "generated_dataset_n500_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_text": "generated_dataset_n1000_diagnostics.txt",
+    "error_message": "Requested size=1000 but only n=908 points available.",
+    "error_type": "ValueError",
+    "num_observations": 1000,
+    "status": "failed"
+  }
+]

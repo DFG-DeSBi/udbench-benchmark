@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "udbench"
+version = "0.1.0"
+description = "Uncertainty decomposition benchmark utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.0",
+  "matplotlib>=3.8",
+  "scipy>=1.13",
+  "scikit-learn>=1.5",
+  "jax==0.6.2",
+  "jaxlib==0.6.2",
+  "flax==0.10.7",
+  "gpjax==0.12.2",
+  "optax==0.2.8",
+  "numpyro",
+  "tqdm>=4.66",
+  "ucimlrepo>=0.0.7",
+]
+
+[project.optional-dependencies]
+benchmarks = [
+  "catboost>=1.2.10",
+  "distrax",
+  "jaxtyping>=0.3.7",
+  "laplax",
+  "numba",
+  "wandb>=0.24.0",
+]
+test = [
+  "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+include = [
+  "udbench",
+  "udbench.*",
+]

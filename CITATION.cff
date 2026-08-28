@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "UDBench"
+abstract: >-
+  Semi-synthetic benchmark suite for evaluating uncertainty decomposition
+  against oracle epistemic and aleatoric targets, accompanying the paper
+  "A Unified Risk View of Uncertainty: Posterior Risk for Disentanglement
+  and Evaluation Beyond Proxies".
+type: software
+license: MIT
+repository-code: "https://github.com/WizgallF/udbench-benchmark"
+authors:
+  - family-names: Wizgall
+    given-names: Frieder
+  - family-names: Tirpitz
+    given-names: Georg
+  - family-names: Seiler
+    given-names: Moritz
+  - family-names: Ritter
+    given-names: Kerstin
+  - family-names: Mucsányi
+    given-names: Bálint
+preferred-citation:
+  type: article
+  title: >-
+    A Unified Risk View of Uncertainty: Posterior Risk for Disentanglement
+    and Evaluation Beyond Proxies
+  year: 2026
+  journal: "arXiv preprint arXiv:2608.05995"
+  url: "https://arxiv.org/abs/2608.05995"
+  identifiers:
+    - type: other
+      value: "arXiv:2608.05995"
+  authors:
+    - family-names: Wizgall
+      given-names: Frieder
+    - family-names: Tirpitz
+      given-names: Georg
+    - family-names: Seiler
+      given-names: Moritz
+    - family-names: Ritter
+      given-names: Kerstin
+    - family-names: Mucsányi
+      given-names: Bálint

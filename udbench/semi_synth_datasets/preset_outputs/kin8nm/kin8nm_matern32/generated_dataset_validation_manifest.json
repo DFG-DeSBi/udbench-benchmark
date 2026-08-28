@@ -1,0 +1,59 @@
+[
+  {
+    "diagnostics_json": "generated_dataset_n100_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.02587243541400585,
+      "avg_post_std": 0.14308191838933992,
+      "n_eval": 1500,
+      "n_obs": 100,
+      "pct_post_ge_80pct_prior": 0.13333333333333333,
+      "pct_post_lt_20pct_prior": 6.666666666666667,
+      "snr": 5.530284107381851,
+      "y_max": 1.4251686884992094,
+      "y_min": 0.18908361552532432,
+      "y_std": 0.27505911670373145
+    },
+    "diagnostics_text": "generated_dataset_n100_diagnostics.txt",
+    "num_observations": 100,
+    "posterior_pdp_plot": "generated_dataset_n100_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n500_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.02587243541400585,
+      "avg_post_std": 0.08809758925071522,
+      "n_eval": 1500,
+      "n_obs": 500,
+      "pct_post_ge_80pct_prior": 0.0,
+      "pct_post_lt_20pct_prior": 33.33333333333333,
+      "snr": 3.405075240927039,
+      "y_max": 1.51789259181795,
+      "y_min": 0.0022459968194357164,
+      "y_std": 0.29020412391560024
+    },
+    "diagnostics_text": "generated_dataset_n500_diagnostics.txt",
+    "num_observations": 500,
+    "posterior_pdp_plot": "generated_dataset_n500_posterior_pdp.png",
+    "status": "success"
+  },
+  {
+    "diagnostics_json": "generated_dataset_n1000_diagnostics.json",
+    "diagnostics_summary": {
+      "avg_noise_std": 0.02587243541400585,
+      "avg_post_std": 0.054627838404698745,
+      "n_eval": 1500,
+      "n_obs": 1000,
+      "pct_post_ge_80pct_prior": 0.0,
+      "pct_post_lt_20pct_prior": 66.66666666666666,
+      "snr": 2.1114300811096576,
+      "y_max": 1.51789259181795,
+      "y_min": -0.015180867929386848,
+      "y_std": 0.286499396040693
+    },
+    "diagnostics_text": "generated_dataset_n1000_diagnostics.txt",
+    "num_observations": 1000,
+    "posterior_pdp_plot": "generated_dataset_n1000_posterior_pdp.png",
+    "status": "success"
+  }
+]

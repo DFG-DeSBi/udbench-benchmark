@@ -1,0 +1,97 @@
+UDBench Experiments — Run Commands
+====================================
+
+All commands must be run from the repository root (the directory containing
+pyproject.toml and the udbench/ package). Results are written as CSV files
+into each experiment's results/ subdirectory.
+
+W&B tuning is enabled by default. Pass --no-tune to skip hyperparameter search
+and run models with default settings instead.
+
+
+Validation Benchmark (Main Results)
+-------------------------------------
+python experiments/exp06_validation_benchmark/run.py
+
+  Runs all models on the 7 validation datasets.
+  Key options:
+    --models MODEL,...       Run a subset of models (comma-separated)
+    --datasets PRESET,...    Run a subset of datasets
+    --tune-count N           Number of W&B sweep runs per model/dataset (default: 10)
+    --no-tune                Skip W&B tuning, use default hyperparameters
+    --seed N                 Random seed (default: 42)
+
+
+Experiment 1 — BNN Activation Function Ablation
+-------------------------------------------------
+python experiments/exp01_bnn_activation/run.py
+
+  Compares relu vs tanh (and optionally silu/gelu) on all 7 developement datasets.
+  Architecture fixed to width=128, depth=2.
+  Key options:
+    --activations relu,tanh,silu,gelu   Activations to compare (default: relu,tanh)
+    --width N                           Hidden width (default: 128)
+    --depth N                           Number of layers (default: 2)
+    --models MODEL,...                  BNN model subset
+    --datasets PRESET,...               Training dataset subset
+    --tune-count N                      W&B sweep runs per condition (default: 10)
+    --no-tune                           Skip W&B tuning
+
+
+Experiment 2 — Tuning Objective Ablation
+------------------------------------------
+python experiments/exp02_tuning_objective/run.py
+
+  Compares val_rmse vs val_nll tuning objectives across all models and
+  all 7 training datasets. Architecture fixed to width=128, depth=2, relu.
+  Key options:
+    --tune-objectives val_rmse,val_nll,...   Objectives to compare (default: val_rmse,val_nll)
+    --models MODEL,...                       Model subset (default: BNN models only)
+                                             Use --models baseline to include non-BNN models
+    --datasets PRESET,...                    Training dataset subset
+    --tune-count N                           W&B sweep runs per condition (default: 10)
+    --no-tune                                Skip W&B tuning
+
+
+Experiment 3 — BNN Optimizer Ablation
+---------------------------------------
+python experiments/exp03_bnn_optimizer/run.py
+
+  Compares adam, sgd, soap, and muon optimizers on all BNN models and
+  all 7 training datasets. Architecture fixed to width=128, depth=2, relu.
+  Key options:
+    --optimizers adam,sgd,soap,muon   Optimizers to compare (default: all four)
+    --models MODEL,...                BNN model subset
+    --datasets PRESET,...             Training dataset subset
+    --tune-count N                    W&B sweep runs per condition (default: 10)
+    --no-tune                         Skip W&B tuning
+
+
+Experiment 4 — BNN Width Ablation
+------------------------------------
+python experiments/exp04_bnn_width_ablation/run.py
+
+  Sweeps hidden width [16, 32, 64, 128, 256, 512] on all BNN models and
+  all 7 training datasets. Depth fixed to 2, activation fixed to relu.
+  Key options:
+    --widths 16,32,64,128,256,512   Width values to sweep (default: all six)
+    --depth N                       Number of layers (default: 2)
+    --models MODEL,...              BNN model subset
+    --datasets PRESET,...           Training dataset subset
+    --tune-count N                  W&B sweep runs per condition (default: 10)
+    --no-tune                       Skip W&B tuning
+
+
+Experiment 5 — BNN Depth Ablation
+------------------------------------
+python experiments/exp05_bnn_depth_ablation/run.py
+
+  Sweeps number of hidden layers [1, 2, 3, 4, 5, 6] on all BNN models and
+  all 7 training datasets. Width fixed to 128, activation fixed to relu.
+  Key options:
+    --depths 1,2,3,4,5,6   Depth values to sweep (default: all six)
+    --width N               Hidden width (default: 128)
+    --models MODEL,...      BNN model subset
+    --datasets PRESET,...   Training dataset subset
+    --tune-count N          W&B sweep runs per condition (default: 10)
+    --no-tune               Skip W&B tuning
