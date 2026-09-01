@@ -1,5 +1,9 @@
 # UDBench
 
+> **DeSBi Release:** This is a curated v1.0.0 release (desbi-2026.09.1) 
+> by the DFG Research Unit KI-FOR 5363 (DeSBi). 
+> See [DESBI_RELEASE.md](./DESBI_RELEASE.md) for provenance information and [CITATION.cff](./CITATION.cff) for citation metadata.
+
 Code and semi-synthetic benchmark suite for the paper:
 
 > **A Unified Risk View of Uncertainty: Posterior Risk for Disentanglement and Evaluation Beyond Proxies**
